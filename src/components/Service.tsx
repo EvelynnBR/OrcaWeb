@@ -23,9 +23,9 @@ export default function Service() {
       <div className="grid px-4 lg:flex gap-8 mt-6">
         <Card>
           <div className="p-4 flex gap-4 md:mt-8">
-            <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center h-18 w-35">
+            <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center w-25 h-13 lg:w-35 lg:h-18">
               <img
-                className="w-14"
+                className="w-7 lg:w-14"
                 src={institucional}
                 alt="imagem de uma janela da web"
               />
@@ -51,9 +51,9 @@ export default function Service() {
 
         <Card>
           <div className="p-4 flex gap-4 md:mt-8">
-            <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center h-18 w-35">
+            <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center w-25 h-13 lg:w-35 lg:h-18">
               <img
-                className="w-14"
+                className="w-7 lg:w-14"
                 src={landingPage}
                 alt="imagem de uma janela da web"
               />
@@ -79,9 +79,9 @@ export default function Service() {
 
         <Card>
           <div className="p-4 flex gap-4 md:mt-8">
-            <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center h-18 w-35">
+            <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center w-25 h-13 lg:w-35 lg:h-18">
               <img
-                className="w-14"
+                className="w-7 lg:w-14"
                 src={eCommerce}
                 alt="imagem de uma janela da web"
               />
