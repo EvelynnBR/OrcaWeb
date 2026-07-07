@@ -13,12 +13,12 @@ export default function Feature() {
 
       <div className="mt-5 md:mt-8 grid gap-4 md:justify-center lg:flex">
         <div className="px-4 flex gap-3 items-start">
-          <strong className="bg-purple-800 grid w-6 h-6 text-center rounded-full text-white font-bold">
+          <strong className="bg-purple-800 grid text-sm lg:text-lg w-5 h-5 lg:w-7 lg:h-7 text-center rounded-full text-white font-bold">
             1
           </strong>
           <div className="bg-purple-100 p-2.5 rounded-3xl">
             <img
-              className="w-13 h-16"
+              className="w-10 h-10 lg:w-13 lg:h-16"
               src={layout}
               alt="imagem de uma janela da web"
             />
@@ -33,12 +33,12 @@ export default function Feature() {
         </div>
 
         <div className="px-4 flex gap-3 items-start">
-          <strong className="bg-purple-800 grid w-6 h-6 text-center rounded-full text-white font-bold">
+          <strong className="bg-purple-800 grid text-sm lg:text-lg w-5 h-5 lg:w-7 lg:h-7 text-center rounded-full text-white font-bold">
             2
           </strong>
           <div className="bg-purple-100 p-2.5 rounded-3xl">
             <img
-              className="w-13 h-16"
+              className="w-10 h-10 lg:w-13 lg:h-16"
               src={customization}
               alt="imagem de uma janela da web"
             />
@@ -53,12 +53,12 @@ export default function Feature() {
         </div>
 
         <div className="px-4 flex gap-3 items-start">
-          <strong className="bg-purple-800 grid w-6 h-6 text-center rounded-full text-white font-bold">
+          <strong className="bg-purple-800 grid text-sm lg:text-lg w-5 h-5 lg:w-7 lg:h-7 text-center rounded-full text-white font-bold">
             3
           </strong>
           <div className="bg-purple-100 p-2.5 rounded-3xl">
             <img
-              className="w-13 h-16"
+              className="w-10 h-10 lg:w-13 lg:h-16"
               src={fileCheck}
               alt="imagem de uma janela da web"
             />
