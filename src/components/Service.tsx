@@ -33,7 +33,7 @@ export default function Service() {
             <div className="grid gap-1">
               <h3 className="font-bold text-gray-800">Sites Institucionais</h3>
               <span className="text-gray-500 text-sm">
-                Apresenta sua empresa com credibilidade e destaque seus serviços
+                Apresente sua empresa com credibilidade e destaque seus serviços
                 na internet.
               </span>
               <Link

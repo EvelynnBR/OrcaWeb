@@ -46,7 +46,7 @@ export default function Feature() {
           <div className="w-55 md:w-60">
             <p className="text-gray-800 font-bold">Personalize recursos</p>
             <span className="text-gray-500 text-sm">
-              Adcione funcionalidades, escolha o nível de design e defina o
+              Adicione funcionalidades, escolha o nível de design e defina o
               prazo de entrega que melhor se encaixa.
             </span>
           </div>

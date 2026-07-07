@@ -77,7 +77,7 @@ export default function Menu() {
               variant="tertiary"
               className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal"
             >
-              Planos
+              Contato
             </Link>
             <span className="lg:h-0.5 lg:bg-purple-500 lg:left-0 lg:right-0 lg:absolute lg:top-6 lg:scale-0 lg:transition-transform lg:duration-300 lg:group-hover:scale-115"></span>
           </li>
