@@ -18,7 +18,7 @@ export default function Feature() {
           </strong>
           <div className="bg-purple-100 p-2.5 rounded-3xl">
             <img
-              className="w-10 h-10 lg:w-13 lg:h-16"
+              className="w-7 h-7 lg:w-13 lg:h-16"
               src={layout}
               alt="imagem de uma janela da web"
             />
@@ -38,7 +38,7 @@ export default function Feature() {
           </strong>
           <div className="bg-purple-100 p-2.5 rounded-3xl">
             <img
-              className="w-10 h-10 lg:w-13 lg:h-16"
+              className="w-7 h-7 lg:w-13 lg:h-16"
               src={customization}
               alt="imagem de uma janela da web"
             />
@@ -58,7 +58,7 @@ export default function Feature() {
           </strong>
           <div className="bg-purple-100 p-2.5 rounded-3xl">
             <img
-              className="w-10 h-10 lg:w-13 lg:h-16"
+              className="w-7 h-7 lg:w-13 lg:h-16"
               src={fileCheck}
               alt="imagem de uma janela da web"
             />
