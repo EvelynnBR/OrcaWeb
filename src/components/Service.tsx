@@ -14,13 +14,13 @@ export default function Service() {
     alert("Botão de teste!");
   }
   return (
-    <section id="service" className="px-4 mt-8 lg:mt-16">
+    <section id="service" className="mt-8 lg:mt-16">
       <div className="flex justify-between items-center gap-3">
         <span className="h-px bg-purple-300 w-full"></span>
         <h2 className="font-bold text-lg whitespace-nowrap">Serviços</h2>
         <span className="h-px bg-purple-300 w-full"></span>
       </div>
-      <div className="grid lg:flex gap-8 mt-6">
+      <div className="grid px-4 lg:flex gap-8 mt-6">
         <Card>
           <div className="p-4 flex gap-4 md:mt-8">
             <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center h-18 w-35">
