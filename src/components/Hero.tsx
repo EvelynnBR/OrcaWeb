@@ -43,7 +43,7 @@ export default function Hero() {
       <div className="mt-8 lg:mt-16 mx-4 grid md:flex md:justify-center gap-4 lg:gap-6">
         <div className="flex gap-2">
           <div className="bg-purple-100 p-2.5 rounded-3xl">
-            <img className="w-9" src={protect} alt="imagem de um escudo" />
+            <img className="w-7 lg:w-9" src={protect} alt="imagem de um escudo" />
           </div>
           <div>
             <p className="font-bold text-gray-800">
@@ -55,7 +55,7 @@ export default function Hero() {
 
         <div className="flex gap-2">
           <div className="bg-purple-100 p-2.5 rounded-3xl">
-            <img className="w-9" src={flash} alt="imagem de um raio" />
+            <img className="w-7 lg:w-9" src={flash} alt="imagem de um raio" />
           </div>
           <div>
             <p className="font-bold text-gray-800">Estimativa instantânea</p>
@@ -65,7 +65,7 @@ export default function Hero() {
 
         <div className="flex gap-2">
           <div className="bg-purple-100 p-2.5 rounded-3xl">
-            <img className="w-9" src={security} alt="imagem de um cadeado" />
+            <img className="w-7 lg:w-9" src={security} alt="imagem de um cadeado" />
           </div>
           <div>
             <p className="font-bold text-gray-800">Seus dados seguros</p>
