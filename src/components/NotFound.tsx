@@ -6,7 +6,7 @@ export default function NotFound() {
         <section className="px-8 grid gap-8">
             <h1 className="font-bold text-purple-700 text-2xl mt-25">Ops! A página que você está procurando não foi encontrada.</h1>
 
-            <Link href="/">Início</Link>
+            <Link href="/" aria-label="Voltar para o início">Início</Link>
         </section>
         </>
     )

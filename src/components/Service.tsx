@@ -39,6 +39,7 @@ export default function Service() {
               <Link
                 variant="tertiary"
                 className="flex-row-reverse p-0 justify-self-start font-semibold"
+                aria-label="Saiba mais sobre sites Institucionais"
                 onClick={handleAlert}
                 icon={seta}
                 iconHover={setaHover}
@@ -67,6 +68,7 @@ export default function Service() {
               <Link
                 variant="tertiary"
                 className="flex-row-reverse p-0 justify-self-start font-semibold"
+                aria-label="Saiba mais sobre Landing Pages"
                 onClick={handleAlert}
                 icon={seta}
                 iconHover={setaHover}
@@ -95,6 +97,7 @@ export default function Service() {
               <Link
                 variant="tertiary"
                 className="flex-row-reverse p-0 justify-self-start font-semibold"
+                aria-label="Saiba mais sobre Lojas Virtuais"
                 onClick={handleAlert}
                 icon={seta}
                 iconHover={setaHover}

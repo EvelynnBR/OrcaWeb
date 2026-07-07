@@ -39,6 +39,7 @@ export default function Menu() {
             <img className="w-5 mr-2 lg:hidden" src={service} alt="" />
             <Link
               href="#service"
+              aria-label="Serviços"
               variant="tertiary"
               className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal"
             >
@@ -50,6 +51,7 @@ export default function Menu() {
             <img className="w-5 mr-2 lg:hidden" src={listCheck} alt="" />
             <Link
               href="#feature"
+              aria-label="Como funciona"
               variant="tertiary"
               className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal"
             >
@@ -61,6 +63,7 @@ export default function Menu() {
             <img className="w-5 mr-2 lg:hidden" src={plans} alt="" />
             <Link
               href="#"
+              aria-label="Planos"
               onClick={handleAlert}
               variant="tertiary"
               className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal"
@@ -73,6 +76,7 @@ export default function Menu() {
             <img className="w-5 mr-2 lg:hidden" src={contact} alt="" />
             <Link
               href="#"
+              aria-label="Contato"
               onClick={handleAlert}
               variant="tertiary"
               className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal"
@@ -81,7 +85,11 @@ export default function Menu() {
             </Link>
             <span className="lg:h-0.5 lg:bg-purple-500 lg:left-0 lg:right-0 lg:absolute lg:top-6 lg:scale-0 lg:transition-transform lg:duration-300 lg:group-hover:scale-115"></span>
           </li>
-          <Button className="hidden lg:flex lg:ml-6" title="Solicitar proposta">
+          <Button
+            className="hidden lg:flex lg:ml-6"
+            onClick={() => alert("Botão de teste!")}
+            title="Solicitar proposta"
+          >
             Solicitar proposta
           </Button>
         </ul>
