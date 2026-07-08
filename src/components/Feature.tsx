@@ -24,7 +24,7 @@ export default function Feature() {
             />
           </div>
           <div className="w-55 md:w-60">
-            <p className="text-gray-800 font-bold">Escolha o tipo de site</p>
+            <h3 className="text-gray-800 font-bold">Escolha o tipo de site</h3>
             <span className="text-gray-500 text-sm">
               Selecione o tipo de site ideal para o seu negócio e informe a
               quantidade de páginas.
@@ -44,7 +44,7 @@ export default function Feature() {
             />
           </div>
           <div className="w-55 md:w-60">
-            <p className="text-gray-800 font-bold">Personalize recursos</p>
+            <h3 className="text-gray-800 font-bold">Personalize recursos</h3>
             <span className="text-gray-500 text-sm">
               Adicione funcionalidades, escolha o nível de design e defina o
               prazo de entrega que melhor se encaixa.
@@ -64,7 +64,7 @@ export default function Feature() {
             />
           </div>
           <div className="w-55 md:w-60">
-            <p className="text-gray-800 font-bold">Receba a estimativa</p>
+            <h3 className="text-gray-800 font-bold">Receba a estimativa</h3>
             <span className="text-gray-500 text-sm">
               Veja o valor estimado na hora e, se quiser, solicite uma proposta
               personalizada da nossa equipe.
