@@ -48,7 +48,8 @@ export default function Hero() {
             <img
               className="w-7 lg:w-9"
               src={protect}
-              alt="imagem de um escudo"
+              alt=""
+              aria-hidden="true"
             />
           </div>
           <div>
@@ -61,7 +62,7 @@ export default function Hero() {
 
         <div className="flex gap-2">
           <div className="bg-purple-100 p-2.5 rounded-3xl">
-            <img className="w-7 lg:w-9" src={flash} alt="imagem de um raio" />
+            <img className="w-7 lg:w-9" src={flash} alt="" aria-hidden="true" />
           </div>
           <div>
             <h3 className="font-bold text-gray-800">Estimativa instantânea</h3>
@@ -74,7 +75,8 @@ export default function Hero() {
             <img
               className="w-7 lg:w-9"
               src={security}
-              alt="imagem de um cadeado"
+              alt=""
+              aria-hidden="true"
             />
           </div>
           <div>

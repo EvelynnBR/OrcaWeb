@@ -43,7 +43,7 @@ export default function Button({
               <img
                 src={iconHover}
                 alt={alt}
-                aria-hidden
+                aria-hidden="true"
                 className="absolute inset-0 size-5 opacity-0 transition-opacity group-hover:opacity-100"
               />
             )}

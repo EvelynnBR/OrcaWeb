@@ -27,7 +27,8 @@ export default function Service() {
               <img
                 className="w-7 lg:w-14"
                 src={institucional}
-                alt="imagem de uma janela da web"
+                alt=""
+                aria-hidden="true"
               />
             </div>
             <div className="grid gap-1">
@@ -56,7 +57,8 @@ export default function Service() {
               <img
                 className="w-7 lg:w-14"
                 src={landingPage}
-                alt="imagem de uma janela da web"
+                alt=""
+                aria-hidden="true"
               />
             </div>
             <div className="grid gap-1">
@@ -85,7 +87,8 @@ export default function Service() {
               <img
                 className="w-7 lg:w-14"
                 src={eCommerce}
-                alt="imagem de uma janela da web"
+                alt=""
+                aria-hidden="true"
               />
             </div>
             <div className="grid gap-1">
