@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <section>
       <Hero />
-      <Feature />
       <Service />
+      <Feature />
     </section>
   );
 }
