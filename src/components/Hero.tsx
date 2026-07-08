@@ -23,7 +23,7 @@ export default function Hero() {
       </div>
       <div className="mt-6 lg:mt-10 grid mx-4 gap-4 w-auto md:justify-center lg:flex lg:justify-start">
         <Link
-          href="https://www.youtube.com/"
+          href="/orcamento"
           aria-label="Simular orçamento"
           className="w-full md:w-150 md:text-lg lg:w-auto"
           icon={calculadora}
