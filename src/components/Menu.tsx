@@ -41,7 +41,7 @@ export default function Menu() {
               href="#service"
               aria-label="Serviços"
               variant="tertiary"
-              className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal"
+              className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal lg:font-semibold"
             >
               Serviços
             </Link>
@@ -53,7 +53,7 @@ export default function Menu() {
               href="#feature"
               aria-label="Como funciona"
               variant="tertiary"
-              className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal"
+              className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal lg:font-semibold"
             >
               Como funciona
             </Link>
@@ -66,7 +66,7 @@ export default function Menu() {
               aria-label="Planos"
               onClick={handleAlert}
               variant="tertiary"
-              className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal"
+              className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal lg:font-semibold"
             >
               Planos
             </Link>
@@ -79,7 +79,7 @@ export default function Menu() {
               aria-label="Contato"
               onClick={handleAlert}
               variant="tertiary"
-              className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal"
+              className="text-white lg:text-gray-800 p-0 justify-start h-8 font-normal lg:font-semibold"
             >
               Contato
             </Link>

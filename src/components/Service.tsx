@@ -33,7 +33,7 @@ export default function Service() {
             </div>
             <div className="grid gap-1">
               <h3 className="font-bold text-gray-800">Sites Institucionais</h3>
-              <span className="text-gray-500 text-sm">
+              <span className="text-gray-600 text-sm">
                 Apresente sua empresa com credibilidade e destaque seus serviços
                 na internet.
               </span>
@@ -63,7 +63,7 @@ export default function Service() {
             </div>
             <div className="grid gap-1">
               <h3 className="font-bold text-gray-800">Landing Pages</h3>
-              <span className="text-gray-500 text-sm">
+              <span className="text-gray-600 text-sm">
                 Páginas estratégicas para campanhas e geração de leads
                 qualificados.
               </span>
@@ -93,7 +93,7 @@ export default function Service() {
             </div>
             <div className="grid gap-1">
               <h3 className="font-bold text-gray-800">Lojas Virtuais</h3>
-              <span className="text-gray-500 text-sm">
+              <span className="text-gray-600 text-sm">
                 Venda online com segurança, gestão de produtos e meios de
                 pagamento.
               </span>

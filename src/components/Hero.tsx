@@ -16,7 +16,7 @@ export default function Hero() {
           Descubra o valor do seu site
           <span className="text-purple-700"> em minutos</span>
         </h1>
-        <h2 className="text-ms md:text-lg text-gray-500">
+        <h2 className="text-ms md:text-lg text-gray-700">
           Simule o orçamento do seu site de forma dinâmica e receba uma
           estimativa instantânea com base nas suas escolhas.
         </h2>
@@ -56,7 +56,7 @@ export default function Hero() {
             <h3 className="font-bold text-gray-800">
               Preço justo e transparente
             </h3>
-            <span className="text-gray-500">Sem taxas escondidas</span>
+            <span className="text-gray-600">Sem taxas escondidas</span>
           </div>
         </div>
 
@@ -66,7 +66,7 @@ export default function Hero() {
           </div>
           <div>
             <h3 className="font-bold text-gray-800">Estimativa instantânea</h3>
-            <span className="text-gray-500">Resultado na hora</span>
+            <span className="text-gray-600">Resultado na hora</span>
           </div>
         </div>
 
@@ -81,7 +81,7 @@ export default function Hero() {
           </div>
           <div>
             <h3 className="font-bold text-gray-800">Seus dados seguros</h3>
-            <span className="text-gray-500">Privacidade garantida</span>
+            <span className="text-gray-600">Privacidade garantida</span>
           </div>
         </div>
       </div>
