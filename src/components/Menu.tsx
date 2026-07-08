@@ -33,7 +33,7 @@ export default function Menu() {
           <img className="w-full" src={menuHamburguer} alt="" aria-hidden="true" />
         </Button>
         <ul
-          className={`absolute top-14 grid bg-purple-500 left-0 px-1 right-0 py-4 bg-pur lg:py-0 gap-2 shadow-[0_12px_32px_rgba(130,0,219,0.30)] lg:shadow-none text-white font-medium lg:flex lg:top-5 lg:right-4 lg:justify-end lg:gap-4 lg:bg-transparent lg:text-black lg:items-center ${show ? "block" : "hidden"}`}
+          className={`absolute top-14 z-100 grid bg-purple-500 left-0 px-1 right-0 py-4 bg-pur lg:py-0 gap-2 shadow-[0_12px_32px_rgba(130,0,219,0.30)] lg:shadow-none text-white font-medium lg:flex lg:top-5 lg:right-4 lg:justify-end lg:gap-4 lg:bg-transparent lg:text-black lg:items-center ${show ? "block" : "hidden"}`}
         >
           <li className="lg:relative flex group bg-purple-400 lg:bg-white rounded-lg pl-4 lg:pl-0">
             <img className="w-5 mr-2 lg:hidden" src={service} alt="" aria-hidden="true" />
