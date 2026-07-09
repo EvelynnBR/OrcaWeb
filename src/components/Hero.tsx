@@ -1,5 +1,4 @@
-import Link from "./Link";
-
+import RouterLink from "./RouterLink";
 import calculadora from "../assets/icon/calculator.svg";
 import monitorDefault from "../assets/icon/monitor-default.svg";
 import monitorHover from "../assets/icon/monitor-hover.svg";
@@ -22,15 +21,15 @@ export default function Hero() {
         </h2>
       </div>
       <div className="mt-6 lg:mt-10 grid mx-4 gap-4 w-auto md:justify-center lg:flex lg:justify-start">
-        <Link
+        <RouterLink
           href="/orcamento"
           aria-label="Simular orçamento"
           className="w-full md:w-150 md:text-lg lg:w-auto"
           icon={calculadora}
         >
           Simular orçamento
-        </Link>
-        <Link
+        </RouterLink>
+        <RouterLink
           href="#service"
           aria-label="Ver serviços"
           className="w-full md:w-150 md:text-lg lg:w-52.5"
@@ -39,7 +38,7 @@ export default function Hero() {
           iconHover={monitorHover}
         >
           Ver serviços
-        </Link>
+        </RouterLink>
       </div>
 
       <div className="mt-8 lg:mt-16 mx-4 grid md:flex md:justify-center gap-4 lg:gap-6">

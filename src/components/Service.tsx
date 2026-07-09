@@ -6,7 +6,7 @@ import eCommerce from "../assets/icon/e-commerce.svg";
 
 import seta from "../assets/icon/seta.svg";
 import setaHover from "../assets/icon/seta-hover.svg";
-import Link from "./Link";
+import RouterLink from "./RouterLink";
 
 export default function Service() {
   function handleAlert(e: React.MouseEvent<HTMLAnchorElement>) {
@@ -37,7 +37,7 @@ export default function Service() {
                 Apresente sua empresa com credibilidade e destaque seus serviços
                 na internet.
               </span>
-              <Link
+              <RouterLink
                 variant="tertiary"
                 className="flex-row-reverse p-0 justify-self-start font-semibold"
                 aria-label="Saiba mais sobre sites Institucionais"
@@ -46,7 +46,7 @@ export default function Service() {
                 iconHover={setaHover}
               >
                 Saiba mais
-              </Link>
+              </RouterLink>
             </div>
           </div>
         </Card>
@@ -67,7 +67,7 @@ export default function Service() {
                 Páginas estratégicas para campanhas e geração de leads
                 qualificados.
               </span>
-              <Link
+              <RouterLink
                 variant="tertiary"
                 className="flex-row-reverse p-0 justify-self-start font-semibold"
                 aria-label="Saiba mais sobre Landing Pages"
@@ -76,7 +76,7 @@ export default function Service() {
                 iconHover={setaHover}
               >
                 Saiba mais
-              </Link>
+              </RouterLink>
             </div>
           </div>
         </Card>
@@ -97,7 +97,7 @@ export default function Service() {
                 Venda online com segurança, gestão de produtos e meios de
                 pagamento.
               </span>
-              <Link
+              <RouterLink
                 variant="tertiary"
                 className="flex-row-reverse p-0 justify-self-start font-semibold"
                 aria-label="Saiba mais sobre Lojas Virtuais"
@@ -106,7 +106,7 @@ export default function Service() {
                 iconHover={setaHover}
               >
                 Saiba mais
-              </Link>
+              </RouterLink>
             </div>
           </div>
         </Card>
