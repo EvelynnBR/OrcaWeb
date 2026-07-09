@@ -21,7 +21,7 @@ export default function Service() {
         <span className="h-px bg-purple-300 w-full"></span>
       </div>
       <div className="grid px-4 lg:flex gap-8 mt-6 lg:justify-center">
-        <Card>
+        <Card className="lg:w-100">
           <div className="p-4 flex gap-4 md:mt-8">
             <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center w-25 h-13 lg:w-35 lg:h-18">
               <img
@@ -51,7 +51,7 @@ export default function Service() {
           </div>
         </Card>
 
-        <Card>
+        <Card className="lg:w-100">
           <div className="p-4 flex gap-4 md:mt-8">
             <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center w-25 h-13 lg:w-35 lg:h-18">
               <img
@@ -81,7 +81,7 @@ export default function Service() {
           </div>
         </Card>
 
-        <Card>
+        <Card className="lg:w-100">
           <div className="p-4 flex gap-4 md:mt-8">
             <div className="bg-purple-100 rounded-3xl mt-4 grid items-center justify-center w-25 h-13 lg:w-35 lg:h-18">
               <img
