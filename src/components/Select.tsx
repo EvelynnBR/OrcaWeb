@@ -64,7 +64,7 @@ export default function Select({ onChange }: SelectProps) {
         return (
           <div
             key={option.value}
-            className={`flex gap-2 mt-2.5 rounded-md relative outline lg:hover:outline-purple-700 lg:hover:outline-2 bg-gray-100 p-1 ${showOption ? "flex" : "hidden"} ${isSelected ? "outline-purple-800 outline-2" : "outline-purple-500"}`}
+            className={`flex gap-2 mt-2.5 rounded-md relative outline lg:hover:outline-purple-700 lg:hover:outline-2 bg-gray-100 p-1 ${showOption ? "flex" : "hidden"} ${isSelected ? "outline-purple-800 outline" : "outline-gray-500"}`}
           >
             <img className="w-5" src={option.icon} aria-hidden="true" />
             <span className="text-gray-700 font-semibold">{option.label}</span>
