@@ -6,11 +6,30 @@ import RadioDesign from "../components/Radio-design";
 import RadioPrazo from "../components/Radio-prazo";
 import Checked from "../components/Checked";
 
+type CheckedItem = {
+  value: string;
+  label: string;
+};
+
 export default function Estimate() {
   const [siteType, setSiteType] = useState("");
   const [pages, setPages] = useState<number>(1);
   const [design, setDesign] = useState("");
   const [prazo, setPrazo] = useState("");
+  const [functionality, setFunctionality] = useState<CheckedItem[]>([]);
+
+  function handleChange(item: CheckedItem, checked: boolean) {
+    setFunctionality((currentValues) => {
+      if (checked) {
+        return [...currentValues, item];
+      }
+
+      return currentValues.filter(
+        (currentItem) => currentItem.value !== item.value,
+      );
+    });
+  }
+
   return (
     <section className="grid mx-4 lg:w-full mt-8 lg:max-w-200 lg:justify-self-center">
       <Card className="grid w-full p-3">
@@ -53,7 +72,12 @@ export default function Estimate() {
           <div className="grid gap-2">
             <h3 className="font-semibold text-gray-800">funcionalidades</h3>
             <Checked
+              value="formContact"
+              label="Formulário de Contato"
+              onChange={handleChange}
             />
+            <Checked value="blog" label="Blog" onChange={handleChange} />
+            <Checked value="seo" label="SEO básico" onChange={handleChange} />
           </div>
         </div>
       </Card>
@@ -62,6 +86,9 @@ export default function Estimate() {
         <span>Total de Páginas: {pages}</span>
         <span>Design escolhido: {design}</span>
         <span>Prazo: {prazo}</span>
+        <span>
+          Funcionalidades: {functionality.map((item) => item.label).join(", ")}
+        </span>
       </div>
     </section>
   );
