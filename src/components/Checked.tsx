@@ -31,13 +31,15 @@ export default function Checked({ value, label, onChange }: CheckedProps) {
   return (
     <section className="grid gap-2">
       <label className="relative flex gap-3 items-center">
-        <div className="border border-gray-400 w-5 h-5 bg-purple-600 rounded-md hover:border-purple-600 hover:cursor-pointer">
+        <div
+          className={`border border-gray-400 w-5 h-5 rounded-md hover:border-purple-600 ${isChecked ? "bg-purple-600" : ""}`}
+        >
           {isChecked && (
             <img src={checkedbox} alt="" className={twMerge(`w-full`)} />
           )}
         </div>
         <input
-          className="absolute inset-0 opacity-0"
+          className="absolute inset-0 opacity-0 hover:cursor-pointer"
           type="checkbox"
           name="functionality"
           value={value}
