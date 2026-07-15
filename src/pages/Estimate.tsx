@@ -53,7 +53,7 @@ export default function Estimate() {
           </div>
 
           <div className="grid gap-2">
-            <h3 className="font-semibold text-gray-800">Número de páginas</h3>
+            <h3 className="font-semibold text-gray-800">Nível de design</h3>
             <RadioDesign
               onChange={(design) => {
                 setDesign(design.value);
