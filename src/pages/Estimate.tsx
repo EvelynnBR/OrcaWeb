@@ -13,6 +13,8 @@ type CheckedItem = {
 
 export default function Estimate() {
   const [siteType, setSiteType] = useState("");
+  const [typePrice, setTypePrice] = useState("");
+
   const [pages, setPages] = useState<number>(1);
   const [design, setDesign] = useState("");
   const [prazo, setPrazo] = useState("");
@@ -39,6 +41,7 @@ export default function Estimate() {
             <Select
               onChange={(option) => {
                 setSiteType(option.label);
+                setTypePrice(option.price);
               }}
             />
           </div>
@@ -82,7 +85,9 @@ export default function Estimate() {
         </div>
       </Card>
       <div className="grid mt-8">
-        <span>Site escolhido: {siteType}</span>
+        <span>
+          Site escolhido: {siteType}, R${typePrice}
+        </span>
         <span>Total de Páginas: {pages}</span>
         <span>Design escolhido: {design}</span>
         <span>Prazo: {prazo}</span>

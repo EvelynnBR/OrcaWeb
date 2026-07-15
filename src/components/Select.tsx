@@ -10,6 +10,7 @@ type Option = {
   value: string;
   label: string;
   icon: string;
+  price: string;
 };
 
 type SelectProps = {
@@ -22,6 +23,7 @@ const options = [
     value: "institucional",
     label: "Institucional",
     icon: institucuinal,
+    price: "1.500",
   },
 
   {
@@ -29,6 +31,7 @@ const options = [
     value: "lading-page",
     label: "Lading Page",
     icon: ladingPage,
+    price: "1000",
   },
 
   {
@@ -36,6 +39,7 @@ const options = [
     value: "ecommerce",
     label: "Loja Virtual",
     icon: ecommerce,
+    price: "2.500",
   },
 ];
 
@@ -44,6 +48,7 @@ export default function Select({ onChange }: SelectProps) {
   const [selectedOption, setSelectedOption] = useState<Option | null>(null);
   const [selectedSiteType, setSelectedSiteType] = useState("Escolha um tipo");
   const [typeIcon, setTypeIcon] = useState("");
+  const [_typePrice, setTypePrice] = useState("");
 
   function handleShowOption() {
     setShowOption((prev) => !prev);
@@ -74,6 +79,7 @@ export default function Select({ onChange }: SelectProps) {
               onClick={handleShowOption}
               onChange={() => {
                 setSelectedSiteType(option.label);
+                setTypePrice(option.price);
                 setSelectedOption(option);
                 setTypeIcon(option.icon);
                 onChange?.(option);
