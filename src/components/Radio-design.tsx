@@ -13,6 +13,7 @@ type Designs = {
   iconSelected: string;
   value: string;
   label: string;
+  price: number
 };
 
 type DesignsProps = {
@@ -25,23 +26,27 @@ const designs: Designs[] = [
     iconSelected: monitorSelected,
     value: "basico",
     label: "Básico",
+    price: 250,
   },
   {
     icon: pen,
     iconSelected: penSelected,
     value: "personalizado",
     label: "Personalizado",
+    price: 500,
   },
   {
     icon: premium,
     iconSelected: premiumSelected,
     value: "premium",
     label: "Premium",
+    price: 750,
   },
 ];
 
 export default function RadioDesign({ onChange }: DesignsProps) {
   const [selectedDesign, setSelectedDesign] = useState<string | null>(null);
+  const [_designPrice, setDesignPrice] = useState<number>()
   return (
     <section className="grid md:flex gap-4 md:justify-between">
       {designs.map((design) => {
@@ -66,6 +71,7 @@ export default function RadioDesign({ onChange }: DesignsProps) {
               checked={isSelected}
               onChange={() => {
                 setSelectedDesign(design.value);
+                setDesignPrice(design.price)
                 onChange(design);
               }}
               className="absolute inset-0 opacity-0 lg:cursor-pointer"
