@@ -22,6 +22,8 @@ export default function Estimate() {
   const [designPrice, setDesignPrice] = useState<number>(0);
 
   const [prazo, setPrazo] = useState("");
+  const [prazoPrice, setPrazoPrice] = useState<number>(0);
+
   const [functionality, setFunctionality] = useState<CheckedItem[]>([]);
 
   function handleChange(item: CheckedItem, checked: boolean) {
@@ -74,6 +76,7 @@ export default function Estimate() {
             <RadioPrazo
               onChange={(prazo) => {
                 setPrazo(prazo.value);
+                setPrazoPrice(prazo.price);
               }}
             />
           </div>
@@ -103,15 +106,17 @@ export default function Estimate() {
       </Card>
       <div className="grid mt-8">
         <span>
-          Site escolhido: {siteType}, R${typePrice}
+          Site escolhido: {siteType} - R${typePrice}
         </span>
         <span>
-          Total de Páginas: {pages}, R${pagesPrice}
+          Total de Páginas: {pages} - R${pagesPrice}
         </span>
         <span>
-          Design escolhido: {design}, R${designPrice}
+          Design escolhido: {design} - R${designPrice}
         </span>
-        <span>Prazo: {prazo}</span>
+        <span>
+          Prazo: {prazo} - R${prazoPrice}
+        </span>
         <span>
           Funcionalidades:{" "}
           {functionality

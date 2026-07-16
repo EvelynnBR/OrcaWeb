@@ -13,6 +13,7 @@ type Prazo = {
   iconSelected: string;
   value: string;
   label: string;
+  price: number;
 };
 
 type PrazoProps = {
@@ -25,23 +26,27 @@ const prazo: Prazo[] = [
     iconSelected: calendarSelected,
     value: "flexivel",
     label: "Flexível",
+    price: 200,
   },
   {
     icon: clock,
     iconSelected: clockSelected,
     value: "normal",
     label: "Normal",
+    price: 300,
   },
   {
     icon: flash,
     iconSelected: flashSelected,
     value: "urgente",
     label: "Urgente",
+    price: 500,
   },
 ];
 
 export default function RadioPrazo({ onChange }: PrazoProps) {
   const [selectedPrazo, setSelectedPrazo] = useState<string | null>(null);
+  const [_prazoPrice, setPrazoPrice] = useState<number>();
   return (
     <section className="grid md:flex gap-4 md:justify-between">
       {prazo.map((pra) => {
@@ -66,6 +71,7 @@ export default function RadioPrazo({ onChange }: PrazoProps) {
               checked={isSelected}
               onChange={() => {
                 setSelectedPrazo(pra.value);
+                setPrazoPrice(pra.price);
                 onChange(pra);
               }}
               className="absolute inset-0 opacity-0 lg:cursor-pointer"
