@@ -2,17 +2,21 @@ import { useState } from "react";
 
 type TotalPages = {
   totalPages: number;
+  totalPrice: number;
 };
 
 type PagesProps = {
   onChange?: (data: TotalPages) => void;
 };
 
+const price = 180;
+
 export default function InputRange({ onChange }: PagesProps) {
   const [pages, setPages] = useState(1);
   const min = 1;
   const max = 20;
   const percentage = ((pages - min) / (max - min)) * 100;
+
   return (
     <div className="flex items-center gap-3">
       <input
@@ -22,10 +26,11 @@ export default function InputRange({ onChange }: PagesProps) {
         value={pages}
         onChange={(event) => {
           const newPages = Number(event.target.value);
+          const totalPrice = newPages * price;
 
           setPages(newPages);
 
-          onChange?.({ totalPages: newPages });
+          onChange?.({ totalPages: newPages, totalPrice: totalPrice });
         }}
         className="range"
         style={{

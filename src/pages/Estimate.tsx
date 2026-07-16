@@ -14,8 +14,9 @@ type CheckedItem = {
 export default function Estimate() {
   const [siteType, setSiteType] = useState("");
   const [typePrice, setTypePrice] = useState("");
-
   const [pages, setPages] = useState<number>(1);
+  const [pagesPrice, setPagesPrice] = useState<number>(180);
+
   const [design, setDesign] = useState("");
   const [prazo, setPrazo] = useState("");
   const [functionality, setFunctionality] = useState<CheckedItem[]>([]);
@@ -51,6 +52,7 @@ export default function Estimate() {
             <InputRange
               onChange={(pages) => {
                 setPages(pages.totalPages);
+                setPagesPrice(pages.totalPrice);
               }}
             />
           </div>
@@ -88,7 +90,9 @@ export default function Estimate() {
         <span>
           Site escolhido: {siteType}, R${typePrice}
         </span>
-        <span>Total de Páginas: {pages}</span>
+        <span>
+          Total de Páginas: {pages}, R${pagesPrice}
+        </span>
         <span>Design escolhido: {design}</span>
         <span>Prazo: {prazo}</span>
         <span>
