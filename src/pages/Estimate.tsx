@@ -14,7 +14,7 @@ type CheckedItem = {
 
 export default function Estimate() {
   const [siteType, setSiteType] = useState("");
-  const [typePrice, setTypePrice] = useState("");
+  const [typePrice, setTypePrice] = useState<number>();
   const [pages, setPages] = useState<number>(1);
   const [pagesPrice, setPagesPrice] = useState<number>(180);
 
