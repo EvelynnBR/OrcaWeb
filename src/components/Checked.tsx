@@ -5,13 +5,19 @@ import { twMerge } from "tailwind-merge";
 type CheckedItem = {
   value: string;
   label: string;
+  price: string;
 };
 
 type CheckedProps = CheckedItem & {
   onChange: (item: CheckedItem, checked: boolean) => void;
 };
 
-export default function Checked({ value, label, onChange }: CheckedProps) {
+export default function Checked({
+  value,
+  label,
+  price,
+  onChange,
+}: CheckedProps) {
   const [isChecked, setIsChecked] = useState(false);
 
   function handleChange() {
@@ -23,6 +29,7 @@ export default function Checked({ value, label, onChange }: CheckedProps) {
       {
         value,
         label,
+        price,
       },
       newCheckedState,
     );
