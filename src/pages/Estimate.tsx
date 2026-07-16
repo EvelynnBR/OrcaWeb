@@ -9,6 +9,7 @@ import Checked from "../components/Checked";
 type CheckedItem = {
   value: string;
   label: string;
+  price: string;
 };
 
 export default function Estimate() {
@@ -18,6 +19,8 @@ export default function Estimate() {
   const [pagesPrice, setPagesPrice] = useState<number>(180);
 
   const [design, setDesign] = useState("");
+  const [designPrice, setDesignPrice] = useState<number>(0);
+
   const [prazo, setPrazo] = useState("");
   const [functionality, setFunctionality] = useState<CheckedItem[]>([]);
 
@@ -62,6 +65,7 @@ export default function Estimate() {
             <RadioDesign
               onChange={(design) => {
                 setDesign(design.value);
+                setDesignPrice(design.price);
               }}
             />
           </div>
@@ -79,10 +83,21 @@ export default function Estimate() {
             <Checked
               value="formContact"
               label="Formulário de Contato"
+              price={"150"}
               onChange={handleChange}
             />
-            <Checked value="blog" label="Blog" onChange={handleChange} />
-            <Checked value="seo" label="SEO básico" onChange={handleChange} />
+            <Checked
+              value="blog"
+              label="Blog"
+              price={"500"}
+              onChange={handleChange}
+            />
+            <Checked
+              value="seo"
+              label="SEO básico"
+              price={"350"}
+              onChange={handleChange}
+            />
           </div>
         </div>
       </Card>
@@ -93,10 +108,15 @@ export default function Estimate() {
         <span>
           Total de Páginas: {pages}, R${pagesPrice}
         </span>
-        <span>Design escolhido: {design}</span>
+        <span>
+          Design escolhido: {design}, R${designPrice}
+        </span>
         <span>Prazo: {prazo}</span>
         <span>
-          Funcionalidades: {functionality.map((item) => item.label).join(", ")}
+          Funcionalidades:{" "}
+          {functionality
+            .map((item) => `${item.label} - R$${item.price}`)
+            .join(", ")}
         </span>
       </div>
     </section>
